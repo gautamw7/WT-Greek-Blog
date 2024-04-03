@@ -1,0 +1,23 @@
+[
+    {
+        "Name": "Gautam Chandrakant Warvatkar",
+        "Email": "gautam.warvatkar@gmail.com",
+        "username": "gautam.warvatkar@gmail.com",
+        "Password": "$2y$10$2HYALe5UZvIKkEc9OKvqLuelrmkgqohS.7sxCLxx.D79mpWYF2ipq",
+        "ConfirmPassword": "$2y$10$SorkO.4AF9cdnmVTsWbeMO0Km2Kb4oUoKlSYTz6ndMXrLRfdCpGeW"
+    },
+    {
+        "Name": "Sumit Warvatkar",
+        "Email": "Sumit191998@gmail.com",
+        "username": "sumit19",
+        "Password": "$2y$10$6OXKaNERC6Es\/5E8hv8vsOOW3LHrYG\/P\/wRjJmXdG\/2l4njVwAWFe",
+        "ConfirmPassword": "$2y$10$xSIetihjc9PnsObKfFHI8ei0gMhc.cijOhrt24Crqf2vaP7QJmPdq"
+    },
+    {
+        "Name": "Gautam",
+        "Email": "gautam.warvatkar22@gmail.com",
+        "username": "gautam",
+        "Password": "$2y$10$Tl6rssC9r77D\/UBl8WXNLev2FSvHuhdzYcwpEZ6r2CKyVKeasERtO",
+        "ConfirmPassword": "$2y$10$Z1VoeOoceLCYfMv.svOnKum51AzVzdHhQAzN0nK7ttPlICSg.oUzi"
+    }
+]
