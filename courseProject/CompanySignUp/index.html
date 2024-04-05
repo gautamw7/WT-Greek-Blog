@@ -1,0 +1,515 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" lang="en-US"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+        <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preload" href="https://internshala.com//static/images/home/sprites/img-assets.png" as="image">
+
+        <link as="font" href="/static/fonts/Inter.woff2?v=3.11" type="font/woff2" crossorigin="">
+    <link as="font" href="/static/fonts/internshala-icons.woff2?vw3rgh" type="font/woff2" crossorigin="">    <script type="text/javascript" async="" src="js/insight.min.js"></script><script async="" src="js/fbevents.js"></script><script async="" src="js/gtm.js" nonce=""></script><script src="js/web-vitals.umd.js"></script>
+    <script src="js/libraries.2583691470.js" defer=""></script>
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico">
+            <title>Hire Interns &amp; Freshers | Post Internships | Internshipment</title>
+        <link href="css/registration.1710394802.css" rel="stylesheet" type="text/css">
+        <script src="js/common_form.1712077506.js" defer="" type="text/javascript"></script>
+        <script src="js/employer-registration.1707367475.js" defer="" type="text/javascript"></script>
+        <script src="js/enterprise.js" defer="" type="text/javascript"></script>
+    <link rel="canonical" href="https://internshala.com/hire-talent">
+
+    </head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NSPHG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    <div id="wrapper">
+        <!-- ribbon -->
+<div id="error" class="notification">
+</div>
+
+<div id="general_notification" class="notification notification_general" style="display: none">
+</div>
+
+<div id="custom_notification_parent">
+    <div id="custom_notification" class="notification notification_general" style="display: none">
+    </div>
+</div>
+
+<!-- modal - error message -->
+<div id="error_modal" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container error_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal - success message -->
+<div id="success_modal" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container success_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <button class="btn btn-secondary modal_secondary_btn close_action" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal - success message -->
+<div id="success_modal_dual_button" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container success_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <a class="btn btn-secondary modal_secondary_btn close_action" data-dismiss="modal">Close</a>
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal - alert message -->
+<div id="alert_modal" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container alert_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- confirmation modal-->
+<div id="confirmation_modal" class="modal fade in internshala-modal confirmation_modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="message_container">
+                    <div class="text-heading heading_4_5"></div>
+                    <div class="text-message body-main"></div>
+                    <div class="button_container">
+                        <button class="btn btn-secondary modal_secondary_btn close_action" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary modal_primary_btn yes-button close_action" data-dismiss="modal">Yes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loading_image">
+</div>
+
+<div class="nav_dropdown_backdrop">
+</div>
+
+    
+<div class="toast internshala-toast loading_toast" id="loading_toast" style="display: block;">
+    <div class="toast-body-container">
+        <div class="toast-body heading_6_6">
+            Loading, please wait...
+        </div>
+    </div>
+</div>
+
+<div class="toast internshala-toast general_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body heading_6_6">
+        </div>
+    </div>
+</div>
+
+<div class="toast internshala-toast error_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body heading_6_6">
+        </div>
+    </div>
+</div>
+
+<div class="toast internshala-toast black_bottom_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body body-main">
+        </div>
+    </div>
+</div>
+
+<div class="popover_overlay">
+</div>
+
+
+<div class="chat_notification_loading_image" style="display: none;">
+</div>
+    <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="ic-24-cross" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                                            <div id="user-menu-container">
+                            <div id="user-menu">
+                                <div class="row">
+                                    <div class="col-xs-6 col-6 user-menu-item active login_student" id="modal_student">
+                                        Student
+                                    </div>
+                                    <div class="col-xs-6 col-6 user-menu-item login_employer" id="modal_employer">
+                                        Employer / T&amp;P
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="7258af979006dbb3532a1f50f6d77d7e">
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="modal_password" tabindex="2" name="password" placeholder="Must be atleast 6 characters">
+                        </div>
+                        <div class="forgot_password">
+                            <a href="/login/forgot_password" id="forgot-password">Forgot password?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit" tabindex="3">Login</button>
+                        </div>
+                                                    <div class="form-group new_to_internshala">
+                                <label>
+                                    New to Internshipment Register (<a href="/registration/student">Student</a> / <a href="/hire-talent">Company</a>)
+                                </label>
+                            </div>
+                                            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Login modal - error message for employers blocked -->
+<div id="employer_blocked_error_modal" class="modal fade" role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="heading">
+                Your account is put on hold.<i style="cursor: pointer;float:right" id="close_modal" data-dismiss="modal" aria-hidden="true" class="ic-24-cross"></i>
+            </div>
+            <div class="heading1">
+                Your account is put on hold.<i style="cursor: pointer;float:right" id="close_modal1" data-dismiss="modal" aria-hidden="true" class="ic-24-cross"></i>
+            </div>
+            <div class="main_content">
+
+                <div class="line1"></div>
+                <div class="sub_heading">
+                </div>
+                <div>
+                </div>
+                <div class="content_specially_for">
+                </div>
+                <div class="error_heading" id="heading_content1"></div>
+                <div class="error_content_1" id="error_content1"></div>
+                <div class="error_heading" id="heading_content2"></div>
+                <div class="error_content_1" id="error_content2"></div>
+                <div class="error_content_2">
+                </div>
+                <div class="line2"></div>
+                <div class="icon_container">
+                    <i class="ic-24-alert-circle"></i>
+                    <div class="icon_content">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="header" class="header_container container-fluid">
+    <div class="max-width-container">
+        <div class="layer"></div>
+<div id="mySidenav" class="sidenav">
+    <br>
+    <div class="ham_menu_items">
+        <div class="ham_main_heading"><a href="/internships">Internships</a></div>
+    </div>
+    <div class="ham_menu_items">
+        <div class="ham_main_heading"><a href="/jobs">Jobs</a></div>
+    </div>
+
+
+    <hr class="ham_line_break">
+    <div class="ham_menu_items">
+        <div class="ham_main_heading"><a href="/registration/student">Register - As a Student</a></div>
+    </div>
+    <div class="ham_menu_items">
+        <div class="ham_main_heading"><a href="/hire-talent">Register - As an Employer</a></div>
+    </div>
+            <div class="ham_menu_items without_link">
+            <div class="ham_main_heading home_page_login_button" id="ham_login_button" data-toggle="modal" data-target="#login-modal">Login
+            </div>
+        </div>
+    </div>
+
+        <nav class="navbar navbar-expand-md">
+            <div class="brand_container">
+                <div class="hamburger_menu">
+                    <i id="hamburger_menu_key" class="ic-24-web-hamburger"></i>
+                </div>
+                <a class="navbar-brand " href="/"> INTERNSHIPMENT
+                </a>
+            </div>
+            <div class="navbar_header_for_chat navbar_mobile" id="main-navbar-header">
+                            </div>
+            <div class="collapse navbar-collapse navbar_desktop">
+                <ul class="navbar-nav nav_menu_container">
+                                                <li class="nav-item">
+                                <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
+                                    <button id="header_login_button" class="btn btn-secondary">Login</button>
+                                </a>
+                            </li>
+                                            </ul>
+            </div>
+                            <div class="mobile_registration_login">
+                    <a data-toggle="modal" data-target="#login-modal" class="employer_login_on_registration_page">
+                        <button id="header_login_button" class="btn btn-secondary">Login</button>
+                    </a>
+                </div>
+                    </nav>
+    </div>
+</div>
+<script nonce="">
+    var employerChatEducationPopoverType = 0;
+    var hasEmployerSeenChatEducation1 = 0;
+    var hasEmployerSeenChatEducation2 = 0;
+    var isChatEducationSeen = 0;
+    var is_chat_conversation_exist = false;
+    var toShowEducation = true;
+
+</script>
+<div style="position: absolute; left:0px; top:0px; height: 0px; width: 0px;">
+    <img src="images/message_with_hover_blue.svg" height="0px" width="0px">
+</div>
+<div id="content">
+    <div class="registration_form" id="internship_form">
+        <div class="banner banner_internship   "></div>
+        <div class="banner banner_job"></div>
+        <div id="content-inner" class="container-fluid internship">
+            <div class="max-width-container">
+                <div id="registration-container">
+                    <div id="registration-container-left">
+                        <div id="internship-registration-container-left">
+            <div class="banner-heading ">
+                            <h1 class="banner-text">Hire Interns &amp; Freshers</h1>                <div class="faster"></div>
+                    </div>
+        <div class="banner-sub-heading ">
+            <h2 class="subheading-00">Post Internships for <span class="h-07-bold">Free</span> &amp; Hire Talent with up to 2 Years of Experience</h2>        </div>
+    </div>                    </div>
+                    <div id="registration-container-right" class="internship  ">
+                        <div id="form-container">
+                            <form role="form" id="registration-form" method="POST" class="internshala-form">
+    <input type="hidden" name="csrf_test_name" value="7258af979006dbb3532a1f50f6d77d7e">
+    <input type="hidden" value="" name="utm_source">
+    <input type="hidden" value="" name="utm_medium">
+    <input type="hidden" value="" name="utm_campaign">
+    <input type="hidden" value="hire-talent" name="source_url">
+    <input type="hidden" value="internshala" name="source">
+    <div class="form-group">
+        <label for="email" class="control-label">Official Email Id </label>
+        <div data-toggle="popover" data-content="<div class='email_popover_close'><i class='ic-24-cross'></i></div><div>An official id (example: <span style='color:#1295c9' class='email_example'>name@company_name.com</span>) is strongly recommended as it helps us verify that you represent the company and enables us to provide you a quick service. If you're a student, please register <a href='https://internshala.com/registration/student' tabindex='20000'>here</a>.</div>" id="email_desktop">
+            <input type="email" class="form-control email-field-employer-registration" id="email" name="email" placeholder="name@company.com">
+        </div>
+        <p id="span_note" style="margin-left:2px;">
+        </p>
+    </div>
+    <div class="form-group">
+        <label for="password" class="control-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Minimum 6 characters">
+    </div>
+    <div class="row">
+        <div class="col" id="first_name_container">
+            <div class="form-group">
+                <label for="first_name" class="control-label">First Name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Your First Name">
+            </div>
+        </div>
+        <div class="col" id="last_name_container">
+            <div class="form-group">
+                <label for="last_name" class="control-label">Last Name</label>
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Your Last Name">
+            </div>
+        </div>
+    </div>
+    <div class="restricted_keyword_error registration_form" style="display: none;"></div>
+    <div id="phone-group-container">
+    <div class="form-group">
+        <label for="phone_primary" class="control-label">Mobile Number</label>
+            <div class="row" id="phone_container">
+                <div class="col col-9">
+                    <input style="margin-left: 14px" type="number" class="form-control mobile-number" id="phone_primary" name="phone_primary" placeholder="Enter mobile number">
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div id="job_registration_form_extras" style="margin-top: 16px">
+        <div class="label_toc">
+            <span style="color: #333333; line-height: 1.57; font-weight: 400">
+                By clicking on <b>Post for Free</b>, you agree to our <a href="/terms#employer" target="_blank">T&amp;C</a>.
+            </span>
+        </div>
+
+        <div id="internship_registration_button_container">
+            <div id="job_employer_registration_button">
+                <button type="submit" class="btn btn-primary">Post for Free</button>
+            </div>
+            <div id="login-link-container">
+                Already registered?
+                <span class="show_login_new">
+                    Login
+                </span>
+            </div>
+        </div>
+
+    </div>
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="registration-content">
+            <div class="why-hire-div">
+                <div class="heading">
+                </div>
+                <div class="outline-div  show_ratings">
+            
+            <div class="features-div">
+            <div class="feature-heading-main">
+            <h2 class="h-06-bold" style="text-align: center; margin-left: 20px">    A One-Stop Solution for Quick &amp; Hassle-Free Hiring</h2>
+        </div>
+        <div class="features features-large-screen ">
+            <div class="sidebar-div">
+            <div id="shortlisting" class="feature-card">
+                    <div class="feature-icon">
+                        <img class="icon-active" src="images/filter-active.svg" alt="">
+                        <img class="icon-inactive" src="images/filter-inactive.svg" alt="">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="text">
+                            <div class="heading1">
+                                <h3 class="h-09-semi-bold">Quick Shortlisting Process</h3>
+                            </div>
+                            <div class="sub-heading1">World-class ATS with filters to shortlist candidates faster.</div>
+                        </div>
+                        <div class="icon"><i class="ic-24-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div id="communication" class="feature-card">
+                    <div class="feature-icon">
+                        <img class="icon-active" src="images/communication-active.svg" alt="">
+                        <img class="icon-inactive" src="images/communication-inactive.svg" alt="">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="text">
+                            <div class="heading1">
+                                <h3 class="h-09-semi-bold">Seamless Communication</h3>
+                            </div>
+                            <div class="sub-heading1">Instant chat feature to reach out to candidates immediately.</div>
+                        </div>
+                        <div class="icon"><i class="ic-24-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div id="hiring-tools" class="feature-card ">
+                    <div class="feature-icon">
+                        <img class="icon-active" src="images/calendar-active.svg" alt="">
+                        <img class="icon-inactive" src="images/calendar-inactive.svg" alt="">
+                    </div>
+                    <div class="feature-card-body">
+                        <div class="text">
+                            <div class="heading1">
+                                <h3 class="h-09-semi-bold">Advanced Hiring Tools</h3>
+                            </div>
+                            <div class="sub-heading1">Built-in interview scheduler and assignment tool for hassle-free hiring.</div>
+                        </div>
+                        <div class="icon"><i class="ic-24-chevron-right"></i></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-feature">
+
+            </div>
+            <div class="main-feature-animated">
+                <div class="img-1"></div>
+                <div class="img-2"></div>
+                <div class="img-3"></div>
+            </div>
+    </div>
+    <div class="features features-small-screen ">
+    <div class="feature-card-2">
+            <div class="feature-heading">
+                <div class="feature-heading">Quick Shortlisting Process </div>
+            </div>
+            <div class="feature-sub-heading">World-class ATS with filters to shortlist candidates faster.</div>
+            <div class="feature-img-div faster-shortlisting-2"></div>
+        </div>
+        <div class="feature-card-2">
+            <div class="feature-heading">
+                <div class="feature-heading">Seamless communication</div>
+                </div>
+            <div class="feature-sub-heading">Instant chat to reach out to candidates immediately </div>
+            <div class="feature-img-div seamless-communication-2"></div>
+        </div>
+        <div class="feature-card-2">
+            <div class="feature-heading">
+                <div class="feature-heading">Advanced hiring tools</div>
+            </div>
+            <div class="feature-sub-heading">Built-in interview scheduler and assignment tool for hasslefree hiring </div>
+            <div class="feature-img-div hiring-tools-2"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/conversion.js">
+</script>
+</body></html>

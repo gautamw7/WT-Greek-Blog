@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>All Bout Greek - Blog - Post Page</title>
+        <link rel="icon" type="image/x-icon" href='assets/img/Screenshot%202024-02-13%20142903.png'>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/Button.css" rel="stylesheet" />
+        <script src="js/LoginDilema.js"> </script>
+        <script src="js/AnchorTagDilema.js"> </script>
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="HomePage.html">Greek Mythology </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="HomePage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Create Post</a></li>
+                        <li class="nav-item" id="usernameAnchor"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Login.html"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('https://wallpapercave.com/wp/wp12703833.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Unraveling the Enigma of Greek Mythology</h1>
+                            <h2 class="subheading">Delve into the Mysteries and Marvels of Ancient Tales</h2>
+                            <span class="meta">
+                                Share your experience
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p> Share your Hot Takes on Greek Mythology  !!!</p>
+                        <div class="my-5">
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN"  method="post" action="process_form.php">
+                                <div class="form-floating">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <label for="name">Name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="Title" name="Title" type="text" placeholder="Enter your Title..." data-sb-validations="required,Title" />
+                                    <label for="Title">Blog Title </label>
+                                    <div class="invalid-feedback" data-sb-feedback="Title:required">An Title is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="Title:Title">Title is not valid.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="Image-link" name="image" type="tel" placeholder="Enter your Image-link ..." data-sb-validations="required" />
+                                    <label for="Image-link" >Image Link ( Please add a Github Link ) </label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="message" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
+                                    <label for="message">Content</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+                                <br />
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Form submission successful!</div>
+                                        To activate this form, sign up at
+                                        <br />
+                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                <!-- Submit Button-->
+                                <button class="button-30" id="submitButton" type="submit">Post</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Place this somewhere in your HTML where it can be seen after submission -->
+        <div id="submissionMessage" class="hide" ></div>
+
+        <script>
+            function showMessage(message) {
+                var messageDiv = document.querySelector('#submissionMessage');
+                messageDiv.textContent = message; // Set the message text
+                messageDiv.classList.remove('hide');
+                messageDiv.classList.add('show');
+
+                // Hide the message after 5 seconds
+                setTimeout(function() {
+                    messageDiv.classList.remove('show');
+                    messageDiv.classList.add('hide');
+                }, 5000);
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var submitButton = document.querySelector("#submitButton"); // Ensure this matches your submit button's ID
+                var form = document.querySelector("#contactForm");
+
+                // add submit event listener
+                form.addEventListener("submit", function (event) {
+
+                    //Prevent the form from submitting normally
+                    event.preventDefault();
+
+                    // Check if username is available in the URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const username = urlParams.get('username');
+                    if (!username) {
+                        showMessage("Please login first before submitting the form.");
+                        return; // Exit the function to prevent further execution
+                    }
+
+                    // Optional: Disable the submit button to prevent multiple submissions
+                    submitButton.disabled = true;
+
+                    fetch('process_form.php', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                return response.json(); // Assuming your PHP script responds with JSON
+                            }
+                            throw new Error('Network response was not ok.');
+                        })
+                        .then(data => {
+                            console.log(data);
+                            // Replace alert with DOM manipulation to display success message
+                            showMessage('The form was submitted successfully ');
+                            submitButton.disabled = false;
+                        })
+                        .catch((error) => {
+                            console.error('There was a problem with the fetch operation:', error);
+                            // Display an error message to the user
+                            showMessage("There was a problem submitting the form. Please try again.");
+                            // Optionally: Re-enable the submit button
+                            submitButton.disabled = false;
+                        });
+
+                });
+            })
+        </script>
+
+
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/gautamw_7/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://leetcode.com/user0165wK/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Greek Mythplogy2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" lang="en-US"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="preload" href="https://internshala.com//static/images/home/sprites/img-assets.png" as="image">
+
+
+    <link as="font" href="/static/fonts/Inter.woff2?v=3.11" type="font/woff2" crossorigin="">
+    <link as="font" href="/static/fonts/internshala-icons.woff2?vw3rgh" type="font/woff2" crossorigin="">    <script async="" src="https://www.clarity.ms/tag/gz5kd3abd6"></script><script async="" src="js/gtm.js" nonce=""></script><script src="js/web-vitals.umd.js"></script>
+    <script src="js/libraries.2583691470.js" defer=""></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="icon" href="favicon.ico">
+            <title>Internshipment</title>
+        <link href="css/registration.1710394802.css" rel="stylesheet" type="text/css">
+        <script src="js/common_form.1712077506.js" defer="" type="text/javascript"></script>
+        <script src="js/student-registration.1707375534.js" defer="" type="text/javascript"></script>
+        <script src="js/enterprise.js" defer="" type="text/javascript"></script>
+        </head>
+
+<body>
+
+<div id="error" class="notification">
+</div>
+
+<div id="general_notification" class="notification notification_general" style="display: none">
+</div>
+
+<div id="custom_notification_parent">
+    <div id="custom_notification" class="notification notification_general" style="display: none">
+    </div>
+</div>
+
+<!-- modal - error message -->
+<div id="error_modal" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container error_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal - success message -->
+<div id="success_modal" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container success_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <button class="btn btn-secondary modal_secondary_btn close_action" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal - success message -->
+<div id="success_modal_dual_button" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container success_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <a class="btn btn-secondary modal_secondary_btn close_action" data-dismiss="modal">Close</a>
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal - alert message -->
+<div id="alert_modal" class="modal fade in internshala-modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image_container alert_image">
+                    <div class="image"></div>
+                </div>
+                <div class="message_container">
+                    <div class="text-heading heading_4_5 small-device-text-center"></div>
+                    <div class="text-message body-main small-device-text-center"></div>
+                    <div class="button_container">
+                        <a class="btn btn-primary modal_primary_btn close_action" data-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- confirmation modal-->
+<div id="confirmation_modal" class="modal fade in internshala-modal confirmation_modal" style="display: none">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="message_container">
+                    <div class="text-heading heading_4_5"></div>
+                    <div class="text-message body-main"></div>
+                    <div class="button_container">
+                        <button class="btn btn-secondary modal_secondary_btn close_action" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary modal_primary_btn yes-button close_action" data-dismiss="modal">Yes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="loading_image">
+</div>
+
+<div class="nav_dropdown_backdrop">
+</div>
+
+    <noscript>
+    <div class="notification notification_js_disabled" style="display: block;">
+        Oops, your browser does not support Javascript. Please use Internshala in another browser.
+    </div>
+    </noscript>
+    
+<div class="toast internshala-toast loading_toast" id="loading_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body heading_6_6">
+            Loading, please wait...
+        </div>
+    </div>
+</div>
+
+<div class="toast internshala-toast general_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body heading_6_6">
+        </div>
+    </div>
+</div>
+
+<div class="toast internshala-toast error_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body heading_6_6">
+        </div>
+    </div>
+</div>
+
+<div class="toast internshala-toast black_bottom_toast" style="display: none;">
+    <div class="toast-body-container">
+        <div class="toast-body body-main">
+        </div>
+    </div>
+</div>
+
+<div class="popover_overlay">
+</div>
+
+
+<div class="chat_notification_loading_image" style="display: none;">
+</div>
+    <div class="modal " id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <i class="ic-24-cross" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                                            <div id="user-menu-container">
+                            <div id="user-menu">
+                                <div class="row">
+                                    <div class="col-xs-6 col-6 user-menu-item active login_student" id="modal_student">
+                                        Student
+                                    </div>
+                                    <div class="col-xs-6 col-6 user-menu-item login_employer" id="modal_employer">
+                                        Employer / T&amp;P
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <form role="form" id="modal-login-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="d528ec4db834ca13a7723aa1c3e805c1">
+                        <div class="form-group">
+                            <label for="email" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="modal_email" tabindex="1" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="modal_password" tabindex="2" name="password" placeholder="Must be atleast 6 characters">
+                        </div>
+                        <div class="forgot_password">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="modal_login_submit" tabindex="3">Login</button>
+                        </div>
+                                                    <div class="form-group new_to_internshala">
+                                <label>
+                                    New to Internshala? Register (<a href="index.html">Student</a> / <a href="/htdocs/courseProject/CompanySignUp/index.html">Company</a>)
+                                </label>
+                            </div>
+                                            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Login modal - error message for employers blocked -->
+<div id="employer_blocked_error_modal" class="modal fade" role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="heading">
+                Your account is put on hold.<i style="cursor: pointer;float:right" id="close_modal" data-dismiss="modal" aria-hidden="true" class="ic-24-cross"></i>
+            </div>
+            <div class="heading1">
+                Your account is put on hold.<i style="cursor: pointer;float:right" id="close_modal1" data-dismiss="modal" aria-hidden="true" class="ic-24-cross"></i>
+            </div>
+            <div class="main_content">
+
+                <div class="line1"></div>
+                <div class="sub_heading">
+                    What happened?
+                </div>
+                <div>
+                    We have determined that this account is violation of Internshala's <span class="primary_color"><a href="https://internshala.com/terms">rules</a></span>.
+                </div>
+                <div class="content_specially_for">
+                    Specifically for,
+                </div>
+                <div class="error_heading" id="heading_content1"></div>
+                <div class="error_content_1" id="error_content1"></div>
+                <div class="error_heading" id="heading_content2"></div>
+                <div class="error_content_1" id="error_content2"></div>
+                <div class="error_content_2">
+                    If you wish to appeal this, or seek further clarification, please contact our team at <span class="primary_color"><a href="mailto:complaints@internshala.com">complaints@internshala.com</a></span>
+                </div>
+                <div class="line2"></div>
+                <div class="icon_container">
+                    <i class="ic-24-alert-circle"></i>
+                    <div class="icon_content">
+                        If this has happened by mistake, it will automatically be reverted within 24 hours.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><div id="header" class="container-fluid">
+    <div class="max-width-container">
+        <nav class="navbar navbar-expand-md">
+            <div class="brand_container">
+                <a class="navbar-brand" href="/htdocs/courseProject/HomePage'/index.html">INTERNSHIPMENT
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid" id="content">
+    <div id="content-inner">
+        <div class="max-width-container">
+            <div id="registration-container">
+                <div id="registration-container-left">
+                    <div class="registration-content">
+                        <div class="heading">
+                                                            <div>Sign-up and apply for free</div>
+                                <div class="underline">
+                                    <img class="desktop" src="images/underline_d.svg">
+                                    <img class="mobile" src="images/underline_m.svg">
+                                </div>
+                                                        </div>
+                                                    <div class="subheading">
+                            </div>
+                                            </div>
+                </div>
+                <div id="registration-container-right">
+
+        <div id="form-container">
+                    <div class="helper">
+                <div class="text2">
+                </div>
+                <div class="border"></div>
+            </div>
+        
+        <form role="form" id="registration-form" method="POST">
+                        <input type="hidden" name="csrf_test_name" value="d528ec4db834ca13a7723aa1c3e805c1">
+
+            <input type="hidden" value="" name="utm_source">
+            <input type="hidden" value="" name="utm_medium">
+            <input type="hidden" value="" name="utm_campaign">
+
+            
+            <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <input type="email" class="form-control email-field-student-registration" id="email" name="email" value="" placeholder="john@example.com">
+            </div>
+            <div class="form-group ">
+                <label for="password" class="control-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" value="" placeholder="Must be atleast 6 characters">
+            </div>
+            <div class="row">
+                <div class="col-6" id="first_name_container">
+                    <div class="form-group">
+                        <label for="first_name" class="control-label">First Name</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" value="" placeholder="John">
+                    </div>
+                </div>
+                <div class="col-6" id="last_name_container">
+                    <div class="form-group">
+                        <label for="last_name" class="control-label">Last Name</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" value="" placeholder="Doe">
+                    </div>
+                </div>
+            </div>
+            <div id="label_toc">
+                We welcome you to Internshipment.
+            </div>
+            <button type="submit" class="btn btn-primary" id="registration_submit">Sign up</button>
+        </form>
+        <div id="login-link-container">Already registered?
+                            <span data-toggle="modal" data-target="#login-modal">Login</span>
+                    </div>
+            </div>
+</div>
+<script nonce="">
+    var to_show_recaptcha = 0;
+</script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Code for Adwords Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script nonce="">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 971396886;
+    w.google_conversion_label = "2vuUCPXQomcQlq6ZzwM";
+    w.google_remarketing_only = false;
+    w.google_conversion_value = 0;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/conversion_async.js">
+</script>
+    </div>
+    <script nonce="">
+    /* <![CDATA[ */
+    var google_conversion_id = 981478532;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+
+<script type="text/javascript" src="js/conversion.js">
+</script>
+
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981478532/?value=0&guid=ON&script=0"/>
+    </div>
+</noscript>
+
+    <script nonce="">
+    var is_guest = 1;
+    var is_company_page = 0;
+    var is_instagram_app = 'no';
+    setTimeout(function() {
+        var loading_toast = document.getElementById("loading_toast");
+        if (typeof loading_toast !== 'undefined' && loading_toast) {
+            loading_toast.style.display = "block";
+        }
+    }, 2000);
+        junk_domain_data = {"gmail.com":["gmai.com","gamil.com","gmail.con","gmil.com","gnail.com","gmail.cim","gmail.co","gamail.com","gmial.com","gmaill.com","gmal.com","g.mail.com","gmaiil.com","gmail.coom","gmail.xom","gmali.com","gmaip.com","g-mail.com","gmail.comm","gmaul.com","gmqil.com","gma.com","g.mail","googlemail.com","gimal.com","gmail.vom","gimail.com","gmaio.com","gmaik.com","gmaol.com","gmailm.com","gemail.com","gmail.in","gmail.coml","gail.com","gmail.cm","gmsil.com","gmail.clm","gmill.com","gami.com","gmail.ocm","gmain.com","gmiail.com","gmail.comn","gmaail.com","gmail.ckm","gmail.comcom","gamil.co","gmail.com.com","gmai8l.com","gamil.comm","gmail.ckn","g-mail.come","gimeil.com","g.mali.com","gmail.comb","ggmail.com","gmail.combus","gmail.comch","gma2il.com","gimel.com","gmai.lcom","gmail.come","gmalil.com","gmail.comk","gmeil.com","gmail.cin","gmail.comlll","gml.com","gmail.comlo","ghmail.com","gmail.commaniraj","gimal.co","gamile.com","gmaaail.com","gmail.comopp","gemil.com","gmail.comp","gmajl.com","gmail.compin","gmaigmai.com","gmail.comrith","gmamil.com","gmail.comt","gmail.comw","gmail.cam","gmail.comy","gmial.come","gani.com","gmile.com","gmail.cpm","gmit.com","gmail.gom","gmmail.com","gmail.lcom","gmail.clom","g.mail.co","gmail.om","gmail.co.com","gmail.v.com","gamil.come","gmail.coma","gmail.coman","gmail.comar"],"yahoo.com":["yaho.com"]}        </script>
+    
+
+
+</body></html>
