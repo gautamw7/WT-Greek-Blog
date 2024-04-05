@@ -1,0 +1,75 @@
+Web Development Test (10 Minutes)
+Instructions: This test consists of 10 questions. The first 7 are multiple-choice questions (MCQs) and the last 3 require short coding solutions (within 10 points each) demonstrating your understanding of web development concepts. Choose the best answer for MCQs. Allow yourself 10 minutes to complete the test.
+
+Good Luck!
+
+Easy (MCQ):
+
+What is the primary purpose of HTML in web development?
+a) To add styling and interactivity to a web page
+b) To define the structure and content of a web page (Answer)
+c) To execute complex logic on the server-side
+d) To create reusable components for web applications
+
+Cascading Style Sheets (CSS) are used for:
+a)  Adding data to web pages
+b)  Providing a structured way to organize content (HTML's role)
+c)  Defining the presentation and layout of a web page (Answer)
+d)  Creating interactive elements on a web page (JavaScript's role)
+
+What is the difference between client-side and server-side scripting in web development?
+a) Client-side scripts run on the user's browser, while server-side scripts run on the web server. (Answer)
+b) Client-side scripts are slower than server-side scripts.
+c) Client-side scripts can only access user data, while server-side scripts can access both user data and server resources.
+d) Client-side scripts are written in HTML, while server-side scripts are written in JavaScript.
+
+Medium (MCQ):
+
+What is the most common way to include external JavaScript code in an HTML document?
+a) By embedding the script directly within HTML tags (e.g., <script> tag) (Answer)
+b) By linking to the JavaScript file using the <link> tag
+c) By storing the code within the <head> section of the HTML document
+d) All of the above (Technically possible, but using <script> is most common)
+
+Coding Question (Medium):
+
+Analyze the following JavaScript code snippet and answer the questions below:
+
+function createListElements(data) {
+  const listItems = [];
+  for (const item of data) {
+    const listItem = document.createElement("li");
+    listItem.textContent = item;
+    // ... (missing code) ...
+    listItems.push(listItem);
+  }
+  return listItems;
+}
+
+// Example usage (assuming data is an array of strings)
+const fruits = ["apple", "banana", "orange"];
+const fruitListItems = createListElements(fruits);
+MCQ questions based on the Code Snippet:
+
+a) What is the functionality likely missing in the ... (missing code) ... section?
+i) Appending the list item (listItem) to an existing list element in the HTML document (Possible Answer)
+ii) Adding a class name to the list item for styling purposes. (Possible Answer)
+iii) Converting the list items (listItems) array into a string before returning. (Not Likely)
+
+b) How could you modify the code to create an ordered list (OL) instead of an unordered list (UL)?
+i) Change the document.createElement("li") line to document.createElement("ol"). (Incorrect - OL goes inside the UL)
+ii) Wrap the returned listItems array in an <ol> element within the function. (Possible Answer)
+iii) Change the type of the data parameter to a specific list format. (Not necessary)
+
+Hard (MCQ + Coding):
+
+What is the purpose of a web application framework (e.g., React, Angular, Vue.js)?
+a) To provide a structured approach for building complex web applications (Answer)
+b) To simplify the process of server-side scripting
+c) To handle all user authentication and authorization tasks
+d) To automatically generate web page content from a database
+Coding Question (Hard):
+
+Write a short JavaScript function that takes a string as input and returns a new string with all vowels (a, e, i, o, u) removed. (10 points)
+removeVowels("Hello World!")  // Should return "Hll Wrld!"
+

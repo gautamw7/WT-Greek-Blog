@@ -1,0 +1,76 @@
+Mobile App Development Test (10 Minutes)
+Instructions: This test consists of 10 questions. The first 7 are multiple-choice questions (MCQs) and the last 3 require short coding solutions (within 10 points each) demonstrating your understanding of mobile app development concepts. Choose the best answer for MCQs. Allow yourself 10 minutes to complete the test.
+
+Good Luck!
+
+Easy (MCQ):
+
+What are the two most common native mobile development platforms?
+a)  iOS and Windows
+
+b)  Android and iOS (Answer)
+c)  Web and Android
+
+d)  JavaScript and Swift
+
+What is the role of an Activity in Android development?
+a)  A reusable building block for user interfaces  (Answer)
+b)  A class responsible for network communication
+c)  A configuration file for the app's manifest
+d)  A background service for long-running tasks
+
+What is the purpose of a storyboard in iOS development?
+a)  To define the app's logic and functionality (use case for code)
+b)  To visually design the app's user interface (Answer)
+c)  To manage data storage and retrieval within the app
+d)  To handle user authentication and authorization
+
+Medium (MCQ):
+
+What is the benefit of using APIs (Application Programming Interfaces) in mobile app development?
+a)  APIs provide pre-built functionality that developers can integrate into their apps. (Answer)
+b)  APIs are a type of database for storing app data.
+c)  APIs are a specific programming language for mobile development.
+d)  APIs are used to directly control the user's device hardware.
+
+Coding Question (Medium):
+
+Analyze the following Java code snippet (assuming it's for an Android app) and answer the questions below:
+public class Product {
+  private String name;
+  private double price;
+
+  public Product(String name, double price) {
+    this.name = name;
+    this.price = price;
+  }
+
+  // ... (missing method) ...
+}
+MCQ questions based on the Code Snippet:
+
+a) What is a likely missing method in the Product class that would be useful?
+i)  A method to calculate a discount on the product price (Possible Answer)
+ii)  A method to display the product information in a user interface element (Not the most common use for a class)
+iii)  A method to set the product name after the object is created (Possible Answer, but with access modifier considerations)
+
+b) How could you modify the Product class to ensure that product prices cannot be negative?
+i)  Add an if statement within the price setter to throw an exception for negative values. (Possible Answer)
+ii)  Change the price variable type to a primitive data type like int. (Not ideal for representing prices with decimals)
+iii)  Create a separate class specifically for handling prices. (Possible but an overkill for this simple example)
+
+Hard (MCQ + Coding):
+
+What is the Model-View-Controller (MVC) design pattern commonly used in mobile app development?
+a)  A pattern for structuring and managing user data within the app
+
+b)  A pattern for separating the app's concerns into Model (data), View (UI), and Controller (logic). (Answer)
+c)  A pattern for handling network communication and asynchronous tasks
+d)  A pattern for designing reusable UI components
+
+Coding Question (Hard):
+
+Write a short function in Python (or any language you're comfortable with) that takes a list of numbers as input and returns a new list containing only the even numbers. (10 points)
+
+Example:
+filter_even_numbers([1, 2, 3, 4, 5])  # Should return [2, 4]

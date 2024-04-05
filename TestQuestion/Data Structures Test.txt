@@ -1,0 +1,104 @@
+Data Structures Test (10 Minutes)
+Instructions: This test consists of 10 questions. The first 7 are multiple-choice questions (MCQs) and the last 3 involve code analysis or require short coding demonstrations. Choose the best answer for MCQs. Allow yourself 10 minutes to complete the test.
+
+Good Luck!
+
+Easy (MCQ):
+
+What is the time complexity of searching for an element in an unsorted array using linear search?
+a) Constant time (O(1))
+b) Logarithmic time (O(log n))
+c) Linear time (O(n)) (Answer)
+d) Quadratic time (O(n^2))
+
+Which data structure is best suited for implementing a Last-In-First-Out (LIFO) principle?
+a) Queue
+b) Stack (Answer)
+c) Linked List
+d) Tree
+
+Medium (MCQ):
+
+What is the difference between a linked list and an array?
+a) Linked lists are more efficient for random insertions and deletions, while arrays are faster for random access. (Answer)
+b) Linked lists can store different data types, while arrays are limited to a single data type.
+c) Linked lists use contiguous memory locations, while arrays do not. (Opposite is true)
+d) Linked lists are always slower than arrays.
+
+Code Analysis (Medium):
+
+Analyze the following Python code snippet and answer the questions below:
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.next = None
+
+class Stack:
+  def __init__(self):
+    self.top = None
+
+  def push(self, data):
+    # ... (missing code) ...
+
+  def pop(self):
+    if self.top is None:
+      print("Stack is empty!")
+      return None
+    removed_data = self.top.data
+    self.top = self.top.next
+    return removed_data
+MCQ questions based on the Code Snippet:
+
+a) What should the missing code in the push method look like to add a new element to the stack?
+i) Create a new node with the data and set it as the top of the stack. (Incorrect - Loses previous elements)
+ii) Create a new node with the data, set its next pointer to the current top, and then update the top to point to the new node. (Answer)
+iii) Append the new data to the end of a linked list maintained within the stack. (Not how stacks typically work)
+
+b) How could you modify the pop method to check if the stack is empty before attempting to remove an element?
+i) The provided code already performs this check. (Answer)
+ii) Add a check within the pop method's body. (Redundant)
+iii) Modify the push method to handle empty stack conditions. (Not necessary for pop)
+
+Hard (MCQ + Coding):
+
+What is a Hash Table data structure and how does it improve average search time compared to a linear search on an unsorted array?
+a) A Hash Table uses a key-value pair system for storing data, allowing for faster retrieval based on the key. (Answer)
+b) Hash Tables require more memory compared to arrays. (True, but a trade-off for faster lookups)
+c) Hash Tables are only suitable for storing string data.
+d) Hash Tables offer no performance benefits over arrays.
+
+Coding Question (Hard):
+Question: Find the output of the following Python code:
+
+Python
+def mystery_function(num):
+  if num == 0:
+    return "zero"
+  elif num % 2 == 0:
+    return mystery_function(num // 2) + " even"
+  else:
+    return mystery_function(num - 1) + " odd"
+
+result = mystery_function(5)
+print(result)
+Use code with caution.
+Code:
+
+Python
+def mystery_function(num):
+  if num == 0:
+    return "zero"
+  elif num % 2 == 0:
+    return mystery_function(num // 2) + " even"
+  else:
+    return mystery_function(num - 1) + " odd"
+
+result = mystery_function(5)
+print(result)
+Use code with caution.
+Multiple Choice Answers:
+
+a) 5 odd even (Incorrect - Calls even twice)
+b) 3 odd even (Incorrect - Misses an odd call)
+c) 2 odd 1 odd even (Correct - Recursive calls reach 0, building the string)
+d) 5 even (Incorrect - The function checks for even first)

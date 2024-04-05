@@ -1,0 +1,69 @@
+Artifical Intelligence :
+Easy (MCQ):
+
+What is the field of Artificial Intelligence (AI) most concerned with achieving?
+a) Human-like emotions in machines
+
+b) Human-level physical capabilities in robots
+c) Intelligent behavior in machines (Answer)
+d) All of the above
+
+Machine learning algorithms typically require more human intervention in:
+a) Data collection
+
+b) Feature engineering (Answer)
+c) Model training speed
+d) Output interpretation
+
+Which of the following is NOT a common application of Artificial Intelligence?
+a) Self-driving cars
+
+b) Spam filtering in email (Answer) - Replaced with a more relevant AI application
+c) Weather prediction
+d) Basic arithmetic calculations
+
+Medium (MCQ):
+
+Which search algorithm is best suited for finding a specific element within a sorted list?
+a) Depth-first search
+b) Breadth-first search
+c) Linear search
+d) Binary search (Answer)
+
+What is the primary goal of a reinforcement learning agent?
+a) To minimize errors in its predictions
+
+b) To learn through trial and error to maximize its reward (Answer)
+c) To perfectly replicate human decision-making
+d) To access and process massive amounts of data
+
+What is a potential ethical concern surrounding the use of AI algorithms in decision-making processes?
+a) Lack of transparency in how the algorithm arrives at its conclusions (Answer)
+b) Potential for bias against certain demographics
+
+c) Both a) and b) (Answer)
+d) Neither a) nor b)
+
+Unsupervised learning techniques are often used for tasks like: a) Image recognition - More suited for supervised learning b) Customer segmentation (Answer) c) Stock price prediction - Possible with supervised learning as well d) Spam email classification - More suited for supervised learning
+
+Hard (MCQ):
+
+What is the role of the activation function in an artificial neural network?
+a) To store weights and biases
+b) To introduce non-linearity into the network (Answer)
+c) To compare the predicted output with the actual output
+d) To initialize the weights of the network
+
+The Turing Test is a measure of a machine's ability to exhibit:
+a) Human-like reasoning
+
+b) Human-level physical capabilities
+c) Indistinguishable conversational ability from a human (Answer)
+d) Creative problem-solving skills
+
+What is the base case in a recursive function?
+a) The first line of the function
+b) The condition that stops the recursive calls (Answer)
+c) The function call itself
+d) The return statement
+

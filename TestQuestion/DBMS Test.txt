@@ -1,0 +1,55 @@
+DBMS Test (10 Minutes)
+Instructions: This test consists of 10 questions designed to assess your advanced knowledge of Database Management Systems (DBMS). Choose the best answer for each question. Allow yourself 10 minutes to complete the test.
+
+Good Luck!
+
+Previously Easy (Now Medium):
+
+Normalization: What is the Boyce-Codd Normal Form (BCNF) and how does it go beyond the limitations of Third Normal Form (3NF)?
+a) BCNF eliminates transitive dependencies not addressed in 3NF, ensuring a higher level of data integrity. (Answer - Moved to Medium)
+b) BCNF deals with null values, a concept not strictly enforced in 3NF.
+c) Both a) and b)
+d) BCNF is less strict than 3NF and allows for partial dependencies.
+
+Concurrency Control: How does optimistic locking differ from pessimistic locking in transaction management?
+a) Optimistic locking checks for conflicts during commit, while pessimistic locking locks data before any modifications. (Answer - Moved to Medium)
+b) Optimistic locking is faster but may lead to lost updates, while pessimistic locking guarantees consistency but can cause bottlenecks.
+c) Optimistic locking is better suited for read-heavy workloads, while pessimistic locking is better for write-heavy workloads.
+
+d) Optimistic locking uses timestamps, while pessimistic locking uses locks.
+
+Indexing:  You have a table with millions of rows and a frequently used query that filters data based on a specific date column. What type of index would be most beneficial for this scenario?
+a) Hash index (Not typically used for filtering based on ranges)
+b) Clustered index (Can improve performance but has write overhead)
+c) B-tree index (Answer - Ideal for efficient range queries on ordered data)
+d) Full-text index (Not suitable for date columns)
+
+Previously Medium (Now Hard):
+
+Query Optimization:  Explain how the cost-based optimization approach works in a DBMS when evaluating different query execution plans.
+a) The DBMS estimates the resource usage (CPU, I/O) for each possible plan and chooses the one with the lowest estimated cost. (Answer - Moved to Hard)
+b) The DBMS relies on user-defined hints to determine the optimal plan.
+c) The DBMS prioritizes plans that utilize indexes over those that don't.
+d) Cost-based optimization is not a common technique in modern DBMS.
+
+Replication:  Discuss the advantages and disadvantages of synchronous and asynchronous replication in a distributed database system.
+a) Synchronous replication ensures data consistency across all replicas but can introduce latency. (Answer - Moved to Hard)
+b) Asynchronous replication is faster but may lead to temporary inconsistencies between replicas. (Answer - Moved to Hard)
+c) Synchronous replication is only suitable for small databases.
+d) Asynchronous replication offers no benefits over synchronous replication.
+
+NoSQL Databases:  When might you choose a NoSQL database over a traditional relational database (RDBMS)?
+a) When dealing with highly structured and schema-based data, relational databases are always preferred. (Opposite)
+b) NoSQL databases offer greater flexibility for handling unstructured or semi-structured data. (Answer - Moved to Hard)
+c) NoSQL databases are inherently slower than relational databases.
+d) Relational databases are better suited for real-time applications.
+
+Expert Level (New):
+
+Explain the concept of materialized views and how they can be used to improve query performance in a data warehouse.
+
+Discuss the ACID properties (Atomicity, Consistency, Isolation, Durability) in the context of transactions and their importance in maintaining data integrity.
+
+How can database security be enhanced through techniques like role-based access control (RBAC) and data encryption?
+
+This revamped test offers a more challenging approach to DBMS concepts. Good luck!

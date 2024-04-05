@@ -1,0 +1,90 @@
+Machine Learning Test (10 Minutes)
+
+Instructions: This test consists of 10 multiple-choice questions (MCQs) on Machine Learning fundamentals. Some questions will refer to code snippets to assess your understanding. Choose the best answer for each question. Allow yourself 10 minutes to complete the test.
+
+Good Luck!
+
+Easy (MCQ):
+
+What is the main goal of a machine learning model?
+a) To perform complex mathematical calculations quickly
+b) To learn from data and make predictions (Answer)
+c) To mimic human emotions perfectly
+d) To connect to and control external devices
+
+What is the difference between supervised and unsupervised learning?
+a) Supervised learning uses labeled data, while unsupervised learning doesn't. (Answer)
+b) Supervised learning is faster, while unsupervised learning is slower.
+c) Supervised learning deals with text data, while unsupervised learning deals with numerical data.
+d) Supervised learning requires coding, while unsupervised learning doesn't.
+
+What is an example of a common application of machine learning?
+a) Basic arithmetic calculations (performed by calculators)
+b) Recommending products on online shopping platforms (Answer)
+c) Sending text messages (performed by programmed logic)
+d) Using a traditional calculator
+
+Medium (MCQ):
+
+Which of the following is NOT a common type of machine learning model?
+a) Decision tree
+b) Artificial neural network
+c) Linear regression model (Answer) - This is a statistical method, not a machine learning model
+d) Support Vector Machine (SVM)
+
+When training a machine learning model, what is the role of validation data?
+a) To assess the model's performance on unseen data (Answer)
+b) To clean and pre-process the data
+c) To train the initial weights and biases in the model
+d) To visualize the data for better understanding
+
+What is the term for the process of evaluating a machine learning model's performance on unseen data?
+a) Training
+b) Testing (Answer)
+c) Validation
+d) Deployment
+
+Consider the following Python code snippet:
+
+Python
+from sklearn.linear_model import LinearRegression
+
+# Load and pre-process data (omitted for brevity)
+X_train, X_test, y_train, y_test = ...
+
+# Create and train a linear regression model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Make predictions on the test data
+y_predicted = model.predict(X_test)
+
+
+# Make predictions on the test data
+y_predicted = model.predict(X_test)
+Use code with caution.
+What type of machine learning task is this code designed for?
+a) Image classification
+b) Natural Language Processing
+c) Linear regression (Answer)
+d)  Clustering
+
+Hard (MCQ):
+
+What is the main difference between gradient descent and other optimization algorithms in machine learning?
+a) Gradient descent only works with linear models.
+b) Gradient descent iteratively adjusts model parameters to minimize a cost function. (Answer)
+c) Gradient descent requires a large amount of training data.
+d) Gradient descent is always the fastest optimization algorithm.
+
+What is regularization in machine learning used for?
+a)  To improve the accuracy of the model on the training data.
+b)  To prevent overfitting and improve the model's generalizability. (Answer)
+c)  To speed up the training process of the model.
+d)  To simplify the model by reducing the number of features.
+
+What is the concept of dimensionality reduction in machine learning?
+a)  Increasing the number of features in the data.
+b)  Reducing the number of features in the data while preserving relevant information. (Answer)
+c)  Adding noise to the data to improve model robustness.
+d)  Transforming the data to a different format.
